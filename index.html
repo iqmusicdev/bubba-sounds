@@ -69,12 +69,36 @@
     </div>
   </section>
 
+  <!-- Contacto -->
+  <section id="contacto" class="contact">
+    <div class="contact-container">
+      <h2>Contacta Con Nosotros</h2>
+      <p class="contact-description">Envíanos tu mensaje y te responderemos lo antes posible.</p>
+      
+      <form action="https://formspree.io/f/meokjzvd" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <input type="email" name="_replyto" required placeholder="Tu email">
+        </div>
+        <div class="form-group">
+          <textarea name="message" required placeholder="Tu mensaje" rows="5"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde BubbaSounds">
+        <input type="hidden" name="_next" value="https://bubbasounds.com/gracias.html">
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Bubba Sounds | Todos los derechos reservados</p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
 
